@@ -5,9 +5,10 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'react-native-gesture-handler';
 import { ApolloProvider } from '@apollo/client';
+import SplashScreen from 'react-native-splash-screen'
 
 import Navigation from './src/navigations/Navigation'
 import client from './src/graphql/client'
@@ -17,6 +18,9 @@ import WatchlistContextProvider from './src/contexts/watchlist'
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide()
+  }, [])
   return (
     <ApolloProvider client={client}>
       <WatchlistContextProvider>
