@@ -59,8 +59,9 @@ export default function TvScreen(props:any){
         <View style={styles.showcaseHeader}>
           <Texts.Big>On The Air</Texts.Big>
           <TouchableOpacity
+            testID="ShowAllOnTheAir"
             style={styles.showAllButton}
-            onPress={() => () => navigateListShow({
+            onPress={() => navigateListShow({
               title: 'On The Air',
               type: 'ontheair',
               show: 'tv'
@@ -85,6 +86,7 @@ export default function TvScreen(props:any){
         <View style={styles.showcaseHeader}>
           <Texts.Big>Popular TV</Texts.Big>
           <TouchableOpacity
+            testID="ShowAllPopularTv"
             style={styles.showAllButton}
             onPress={() => navigateListShow({
               title: 'Popular TV',
@@ -111,6 +113,7 @@ export default function TvScreen(props:any){
         <View style={styles.showcaseHeader}>
           <Texts.Big>Top Rated TV</Texts.Big>
           <TouchableOpacity
+            testID="ShowAllTopRatedTv"
             style={styles.showAllButton}
             onPress={() => navigateListShow({
               title: 'Top Rated TV',
@@ -137,6 +140,7 @@ export default function TvScreen(props:any){
         <View style={styles.showcaseHeader}>
           <Texts.Big>Air Today</Texts.Big>
           <TouchableOpacity
+            testID="ShowAllAirToday"
             style={styles.showAllButton}
             onPress={() => navigateListShow({
               title: 'Air Today',

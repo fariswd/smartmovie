@@ -23,7 +23,10 @@ interface Item {
 
 function renderItem (props: {item:Item}, navigation, show) {
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('Detail', {id: props.item.id, title: props.item.title, show })}>
+    <TouchableOpacity
+      testID="HorizontalTouchToDetail"
+      onPress={() => navigation.navigate('Detail', {id: props.item.id, title: props.item.title, show })}
+      >
       <Image
         source={{uri: `${config.IMGBASE}${props.item.poster_path}`}}
         style={{width: 160, height: 240}}
@@ -43,6 +46,7 @@ function renderLoad () {
 function FooterShowAll (props) {
   return(
     <TouchableOpacity
+      testID="ShowAllFooter"
       style={{
         height: 240,
         width: 160,

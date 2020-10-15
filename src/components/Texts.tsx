@@ -28,14 +28,6 @@ export function Medium (props:any){
   )
 }
 
-export function Small (props:any){
-  return (
-    <Text style={[styles.Small, props.style]}>
-      {props.children}
-    </Text>
-  )
-}
-
 const styles = StyleSheet.create({
   XBig: {
     fontSize: 24,

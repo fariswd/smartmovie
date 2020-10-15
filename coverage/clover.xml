@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1602774570937" clover="3.2.0">
+  <project timestamp="1602774570937" name="All files">
+    <metrics statements="89" coveredstatements="81" conditionals="2" coveredconditionals="2" methods="40" coveredmethods="32" elements="131" coveredelements="115" complexity="0" loc="89" ncloc="89" packages="5" files="9" classes="9"/>
+    <package name="components">
+      <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="2" methods="14" coveredmethods="14"/>
+      <file name="HorizontalShowcase.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/components/HorizontalShowcase.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="39" count="24" type="stmt"/>
+        <line num="47" count="9" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="73" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="74" count="8" type="stmt"/>
+        <line num="78" count="24" type="stmt"/>
+        <line num="83" count="9" type="stmt"/>
+        <line num="86" count="10" type="stmt"/>
+        <line num="87" count="12" type="stmt"/>
+        <line num="89" count="10" type="stmt"/>
+        <line num="90" count="9" type="stmt"/>
+      </file>
+      <file name="Texts.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/components/Texts.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="24" count="16" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="constants">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="colors.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/constants/colors.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="config.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/constants/config.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="graphql">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="mock.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/graphql/mock.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+        <line num="117" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="graphql.queries">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="movieQueries.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/graphql/queries/movieQueries.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+      </file>
+      <file name="tvQueries.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/graphql/queries/tvQueries.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="screens">
+      <metrics statements="52" coveredstatements="44" conditionals="0" coveredconditionals="0" methods="26" coveredmethods="18"/>
+      <file name="MovieScreen.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/screens/MovieScreen.tsx">
+        <metrics statements="26" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="9"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="140" count="1" type="stmt"/>
+        <line num="153" count="0" type="stmt"/>
+        <line num="164" count="1" type="stmt"/>
+      </file>
+      <file name="TvScreen.tsx" path="/Users/fariswd/Documents/myproject/smartmovie/smartmovie/src/screens/TvScreen.tsx">
+        <metrics statements="26" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="9"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="118" count="1" type="stmt"/>
+        <line num="131" count="0" type="stmt"/>
+        <line num="145" count="1" type="stmt"/>
+        <line num="158" count="0" type="stmt"/>
+        <line num="169" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

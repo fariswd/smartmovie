@@ -54,6 +54,7 @@ export default function MovieScreen(props:any){
         <View style={styles.showcaseHeader}>
           <Texts.Big>Now Playing</Texts.Big>
           <TouchableOpacity
+            testID="ShowAllNowplaying"
             style={styles.showAllButton}
             onPress={() => navigateListShow({
               title: 'Now Playing',
@@ -80,6 +81,7 @@ export default function MovieScreen(props:any){
         <View style={styles.showcaseHeader}>
           <Texts.Big>Popular</Texts.Big>
           <TouchableOpacity
+            testID="ShowAllPopular"
             style={styles.showAllButton}
             onPress={() => navigateListShow({
               title: 'Popular',
@@ -106,6 +108,7 @@ export default function MovieScreen(props:any){
         <View style={styles.showcaseHeader}>
           <Texts.Big>Top Rated</Texts.Big>
           <TouchableOpacity
+            testID="ShowAllTopRated"
             style={styles.showAllButton}
             onPress={() => navigateListShow({
               title: 'Top Rated',
@@ -132,6 +135,7 @@ export default function MovieScreen(props:any){
         <View style={styles.showcaseHeader}>
           <Texts.Big>Upcoming</Texts.Big>
           <TouchableOpacity
+            testID="ShowAllUpcoming"
             style={styles.showAllButton}
             onPress={() => navigateListShow({
               title: 'Upcoming',
