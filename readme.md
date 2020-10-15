@@ -40,7 +40,7 @@ yarn test
 
 ## Production Apk files
 ```
-check release menu for download links
+https://github.com/fariswd/smartmovie/releases/tag/1.0.0
 ```
 
 
