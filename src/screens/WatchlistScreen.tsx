@@ -76,12 +76,9 @@ export default function WatchlistScreen(props) {
     setMyWatch(watchlist)
   }, [])
 
-  useEffect(() => {
-    findWatchlist(find)
-  }, [find])
-
   const findWatchlist = (text) => {
     if(text){
+      setFind(text)
       const rex = RegExp(text, 'gi');
       const newWatchlist = myWatch.filter((w:{title:string, name:string, show:string}) => {
         if(w.show=='movie'){
@@ -92,6 +89,7 @@ export default function WatchlistScreen(props) {
       })
       setMyWatch(newWatchlist)
     } else {
+      setFind("")
       setMyWatch(watchlist)
     }
   }
@@ -123,7 +121,7 @@ export default function WatchlistScreen(props) {
         <View style={{flex: 1}}>
           <TextInput
             value={find}
-            onChangeText={(text) => setFind(text)}
+            onChangeText={(text) => findWatchlist(text)}
             style={{paddingVertical: 6}}
             placeholder="Find watchlist"
           />
@@ -138,7 +136,7 @@ export default function WatchlistScreen(props) {
         }}
         renderItem={(item) => renderItem(item, props.navigation)}
         keyExtractor={(item: {id:number}) => `${item.id}`}
-        ListFooterComponent={() => <View style={{paddingBottom: 100}}/>}
+        ListFooterComponent={() => <View style={{paddingBottom: 100}} />}
       />
     </View>
   )
