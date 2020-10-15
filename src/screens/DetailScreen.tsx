@@ -5,7 +5,8 @@ import {
   Image,
   ActivityIndicator,
   ScrollView,
-  Dimensions
+  Dimensions,
+  StyleSheet
 } from 'react-native'
 
 import { DETAILMOVIE, DETAILTV } from '../graphql/queries/detailQueries'
@@ -36,7 +37,7 @@ export default function DetailScreen (props: {route: { params:params }, navigati
     backdrop_path: '',
     first_air_date: '',
     popularity: '',
-    genre: '',
+    genres: [],
     status: ''
   })
   const [loading, setLoading] = useState(true)
@@ -77,16 +78,58 @@ export default function DetailScreen (props: {route: { params:params }, navigati
           <WatchlistButton item={detail} show={show}/>
         </View>
       </View>
-      <View style={{paddingHorizontal: 16, marginTop: 8}}>
+      <View style={styles.boxContainer}>
         <Texts.XBig>
           {show=='movie' ? `${detail.title}` : `${detail.name}`}
+          {` (`}
+          {show=='movie' ? detail.release_date.substr(0,4) : detail.first_air_date.substr(0,4)}
+          {`) `}
         </Texts.XBig>
-        <Texts.Medium>Release Date: {show=='movie' ? detail.release_date : detail.first_air_date}</Texts.Medium>
-        <Texts.Medium>Status: {detail.status}</Texts.Medium>
-        <Texts.Medium>Popularity: {detail.popularity}</Texts.Medium>
-        <Texts.Medium>Vote Average: {detail.vote_average}</Texts.Medium>
-        <Texts.Medium>{detail.overview}</Texts.Medium>
+        <View style={{borderBottomWidth: 0.5, marginVertical: 4}} />
+        <View style={styles.listed}>
+          <Texts.Medium>Release Date:</Texts.Medium>
+          <Texts.Medium>{show=='movie' ? detail.release_date : detail.first_air_date}</Texts.Medium>
+        </View>
+        <View style={styles.listed}>
+          <Texts.Medium>Status:</Texts.Medium>
+          <Texts.Medium>{detail.status}</Texts.Medium>
+        </View>
+        <View style={styles.listed}>
+          <Texts.Medium>Genres:</Texts.Medium>
+          <Texts.Medium>{detail.genres.map((g:{name:string}) => `${g.name} `)}</Texts.Medium>
+        </View>
+        <View style={styles.listed}>
+          <Texts.Medium>Popularity:</Texts.Medium>
+          <Texts.Medium>{detail.popularity}</Texts.Medium>
+        </View>
+        <View style={styles.listed}>
+          <Texts.Medium>Vote Average:</Texts.Medium>
+          <Texts.Medium>{detail.vote_average}</Texts.Medium>
+        </View>
+        <View style={{paddingVertical: 8}}>
+          <Texts.Medium>Overview</Texts.Medium>
+          <View style={{paddingBottom: 8}} />
+          <Texts.Medium style={{lineHeight: 24}}>{detail.overview}</Texts.Medium>
+        </View>
       </View>
     </ScrollView>
   )
 }
+
+const styles = StyleSheet.create({
+  listed: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: 8,
+  },
+  boxContainer: {
+    paddingBottom: 24,
+    paddingTop: 8,
+    paddingHorizontal: 8,
+    marginTop: 8,
+    marginHorizontal: 8,
+    marginBottom: 20,
+    backgroundColor: 'white',
+    borderRadius: 15,
+    }
+})

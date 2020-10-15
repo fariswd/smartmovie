@@ -109,7 +109,7 @@ export default function ListShow (props: {route: { params:params }, navigation:a
       <FlatList
         data={listShow}
         renderItem={(item) => renderItem(item, props.navigation, show)}
-        keyExtractor={(item: {id:number}) => `${item.id}`}
+        keyExtractor={(item: {id:number}, i) => `${item.id}${i}`}
         onEndReached={() => {
           callQuery(page+1)
           setPage(page+1)

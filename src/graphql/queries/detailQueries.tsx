@@ -18,7 +18,7 @@ export const DETAILMOVIE = gql`
         overview
         backdrop_path
         popularity
-        genre
+        genres
         status
       }
   }
@@ -39,7 +39,7 @@ export const DETAILTV = gql`
         overview
         backdrop_path
         popularity
-        genre
+        genres
         status
       }
   }
