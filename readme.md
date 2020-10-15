@@ -2,7 +2,8 @@
 Movie collection App
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ss1.png" height="300"><img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ss2.png" height="300"><img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ss3.png" height="300"><img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ss4.png" height="300"><img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ss5.png" height="300"><img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ss6.png" height="300"><img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ss7.png" height="300">
+<img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ssandrooid.png" height="600">  
+<img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ssios.png" height="600">
 
 ## Features
 ```
@@ -30,6 +31,15 @@ yarn install
 yarn start
 connect your device/turn on android emulator
 yarn android
+```
+
+## Compile & Run (ios)
+```
+git clone
+yarn install
+npx pod-install ios
+open xcode - browse ./ios/smartmovie.xcworkspace (white icon)
+hit xcode play button(build and run)
 ```
 
 ## Test
