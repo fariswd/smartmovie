@@ -39,6 +39,7 @@ git clone
 yarn install
 npx pod-install ios
 open xcode - browse ./ios/smartmovie.xcworkspace (white icon)
+yarn start
 hit xcode play button(build and run)
 ```
 
