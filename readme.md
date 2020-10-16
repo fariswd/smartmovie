@@ -2,8 +2,8 @@
 Movie collection App
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ssandroid.png" height="600">  
-<img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ssios.png" height="600">
+<img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ssandroid.png" >  
+<img src="https://raw.githubusercontent.com/fariswd/smartmovie/master/ssios.png" >
 
 ## Features
 ```
