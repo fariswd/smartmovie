@@ -105,7 +105,7 @@ export default function ListShow (props: {route: { params:params }, navigation:a
   }
 
   return (
-    <View>
+    <View style={{flex: 1}}>
       <FlatList
         data={listShow}
         renderItem={(item) => renderItem(item, props.navigation, show)}

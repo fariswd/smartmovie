@@ -78,7 +78,11 @@ const genre = [
 
 function findGenre(id:Number) {
   const filtered = genre.filter(g => g.id == id)
-  return filtered[0].name ?? ''
+  if(filtered.length>0){
+    return filtered[0].name
+  } else {
+    return ''
+  }
 }
 
 export default findGenre
